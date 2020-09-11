@@ -51,7 +51,7 @@ class Charge():
 
 class Electric_car(Car):
     def __init__(self, year, brand, type):
-        # super() 是一个特殊函数，帮助Python将父类和子类关联起来，调用ElectricCar 的父类的方法__init__()
+        # super() 是一个特殊函数，帮助Python将父类和子类关联起来，调用Electric_car 的父类的方法__init__()
         super().__init__(year, brand, type)
         self.battery = Battery()
         self.charge = Charge()
